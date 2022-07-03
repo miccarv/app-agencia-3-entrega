@@ -51,7 +51,6 @@ var
 
    i:inteiro
 
-   
 inicio
 
    escreval("---------------------  CADASTRO ---------------------")
@@ -81,14 +80,13 @@ inicio
       escreva ("Digite um CPF para Consulta : ")
       leia (cpfpesq)
       para i de 1 ate 3 faca
-      se (cpf[i]) = (cpfpesq) então
+        se (cpf[i]) = (cpfpesq) então
          escreval ("---------------------- CONSULTA PELO CPF -------------------")
          escreval ("CPF: ", cpf[i])
          escreval ("Nome: ", nome[i])
          escreval ("Destino: ", desx[i])
-
          encontrado<-verdadeiro
-      fimse
+        fimse
       fimpara
       se encontrado=falso então
          escreval ("------------ Cadastro não encontrado! -------------")
@@ -106,6 +104,7 @@ var
 inicio
 
    escreval("---------------------  CADASTRO DESTINO ---------------------")
+
    para i de 1 ate 3 faca
       escreva ("Digite a duração da viagem: ")
       leia (per[i])
@@ -114,7 +113,6 @@ inicio
       escreva ("Digite o Destino: ")
       leia (desy[i])
       escreval("")
-
    fimpara
 
    principal()
