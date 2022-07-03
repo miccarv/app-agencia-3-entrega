@@ -1,0 +1,60 @@
+.container-fluid {
+   margin: 0px;
+   position: absolute;
+   top: 50px;
+
+}
+
+.col-lg-6 {
+   padding: 50px;
+}
+
+a {
+   text-decoration: none;
+}
+
+body {
+   overflow-x: hidden;
+
+}
+
+.row {
+   padding-left: 20px;
+   padding-right: 20px;
+
+}
+
+
+.nouline {
+   text-decoration: none !important
+}
+
+.row2 {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.rowItem {
+   width: 300px;
+   margin: 50px;
+}
+
+.nooverflow {
+   overflow-y: hidden;
+}
+
+.jumbotron {
+   position: absolute;
+   top: 100px;
+
+}
+
+.home-bg {
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.616), rgba(0, 0, 0, 0.616)), url(../img/img4.jpg);
+   background-repeat: repeat;
+   background-size: cover;
+   background-attachment: fixed;
+
+}
