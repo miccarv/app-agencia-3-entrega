@@ -1,54 +1,94 @@
-.container-fluid {
-   margin: 0px;
+* {
+   box-sizing: border-box !important;
+   margin: 0;
+   padding: 0;
+}
+
+html,
+body {
+   overflow-x: hidden !important;
+   height: 100% !important;
+   width: 100% !important;
+   min-height: 100% !important;
+   min-width: 100% !important;
+}
+
+body {
    position: absolute;
-   top: 50px;
+   display: flex;
+   flex-direction: column;
+}
+
+.container-fluid {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   position: absolute;
+   min-height: 100%;
+   padding: 56px 5rem 56px 5rem;
 }
 
 .col-lg-6 {
-   padding: 50px;
+   padding: 3em 2em !important;
 }
 
 a {
    text-decoration: none;
 }
 
-body {
-   overflow-x: hidden;
-}
-
-.row {
-   padding-left: 20px;
-   padding-right: 20px;
-}
-
 .nouline {
    text-decoration: none !important
 }
 
-.row2 {
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: center;
-}
-
 .rowItem {
-   width: 300px;
-   margin: 50px;
+   padding: 1rem;
+   border: 1px solid white;
+   margin: 1rem;
+   flex: 0 1 20rem;
+   width: 20rem;
 }
 
-.nooverflow {
-   overflow-y: hidden;
-}
+.rowItem>img {
+   width: inherit;
+   padding: 1rem;
 
-.jumbotron {
-   position: absolute;
-   top: 100px;
 }
 
 .home-bg {
    background: linear-gradient(0deg, rgba(0, 0, 0, 0.616), rgba(0, 0, 0, 0.616)), url(../img/img4.jpg);
-   background-repeat: repeat;
    background-size: cover;
    background-attachment: fixed;
+}
+
+.jumbotron {
+   margin: .25rem;
+}
+
+.card {
+   width: 18rem !important;
+}
+
+.card>img {
+   border-radius: 10px;
+   padding-left: .25rem;
+   padding-right: .25rem;
+}
+
+.form-login {
+   margin-top: 5rem;
+   min-width: 10rem;
+   display: flex;
+   flex-direction: column;
+}
+
+.form-login>button {
+   margin-top: 1em;
+   width: 10em;
+   align-self: center;
+}
+
+.bg-blue {
+   background-color: rgb(25, 62, 110);
 }
